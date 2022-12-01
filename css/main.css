@@ -1,0 +1,48 @@
+body{
+  margin: 0;
+}
+
+.nav-section{
+  height: 10vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.add-thread-section, .left-spacer-section{
+  height: 100%;
+  width: 10%;
+  background-color: orange;
+}
+
+.search-section{
+  height: 100%;
+  width: 70%;
+  background-color: blue;
+}
+
+.right-nav-section{
+  height: 100%;
+  width: 30%;
+  background-color: yellow;
+}
+
+.content-section{
+  height: 90vh;
+  width: 100%;
+  display: flex;
+}
+
+
+
+.left-thread-section{
+  height: 100%;
+  width: 70%;
+  background-color: lime;
+}
+
+.right-thread-section{
+  heigth: 100%;
+  width: 30%;
+  background-color: red;
+}
