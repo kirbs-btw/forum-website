@@ -16,6 +16,9 @@ body{
 }
 
 .search-section{
+  Display: flex;
+  content-justify: Center;
+  align-item: Center; 
   height: 100%;
   width: 70%;
   background-color: blue;
