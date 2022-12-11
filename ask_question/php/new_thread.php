@@ -16,6 +16,10 @@
   $topic = mysqli_real_escape_string($conn, $_POST['topic']);
   $content = mysqli_real_escape_string($conn, $_POST['content']);
 
+  // need a hashing function to generate a id for the thread
+  $id = "";
+
+
   if (mysqli_connect_error()){
     die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
   } else{
