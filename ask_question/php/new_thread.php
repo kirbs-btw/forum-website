@@ -44,6 +44,6 @@
 
 
 
-  // redirect
-  header("Location:../ask.html");
+  // redirect to the new thread 
+  header("Location: ../../thread/" . $threadTopic");
 ?>
