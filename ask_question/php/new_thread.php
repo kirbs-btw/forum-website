@@ -16,9 +16,9 @@
   $topic = mysqli_real_escape_string($conn, $_POST['topic']);
   $content = mysqli_real_escape_string($conn, $_POST['content']);
 
-  // need a hashing function to generate a id for the thread
-  $id = "";
-
+  // hashing the content and the topic to create a id key
+  $hashtxt = $topic + $content;
+  $id = hash('sha256', $hashtxt);
 
   if (mysqli_connect_error()){
     die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
@@ -37,13 +37,13 @@
       $threadTopic = $threadTopic + "_"
     }
   }
-  
+
 
   // create file
   $file = fopen("../../thread/" . $threadTopic)
+    // find out how to create a content of this file with thread content
 
 
-
-  // redirect to the new thread 
-  header("Location: ../../thread/" . $threadTopic");
+  // redirect
+  header("Location:../ask.html");
 ?>
