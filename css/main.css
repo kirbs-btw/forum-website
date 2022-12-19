@@ -107,7 +107,7 @@ body{
 }
 
 .comment-form-form > textarea{
-  resize: vertical;
+  resize: none;
 }
 
 .comment-form-form > button{
@@ -197,4 +197,16 @@ body{
 
 .trending-head-a:hover{
   color: var(--accentTwoColor);
+}
+
+#comment-head-section{
+  margin-bottom: 0.05vh;
+}
+
+#thread-id{
+  color: var(--accentColor);
+  font-family: Futura Bk BT;
+  margin-top: 0;
+  font-size: 1vh;
+
 }
