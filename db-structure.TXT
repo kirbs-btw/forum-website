@@ -1,0 +1,18 @@
+threads
+  thread-id
+  question
+  topic
+  date
+  time
+
+
+comments
+  thread-id
+  topic
+  content
+  date
+  time
+  commentId?
+
+
+the comments are linked to the thread via the id of the thread
