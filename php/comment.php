@@ -31,6 +31,12 @@
     mysqli_query($conn, $sql);
   }
 
+  //add html to the php site 
+  /*
+    DIV Thread 
+  */ 
+
+
   // redirect
   header("Location:../index.html");
 ?>
