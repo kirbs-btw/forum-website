@@ -31,10 +31,15 @@
     mysqli_query($conn, $sql);
   }
 
-  //add html to the php site 
+  // adding the HTML to the website...
+  // the code to be added
   /*
-    DIV Thread 
-  */ 
+  <div class="thread-display-section">
+    <a href="#" class="thread-head-a">$topic</a>
+    <p>$content</p>
+  </div>
+  */
+
 
 
   // redirect
